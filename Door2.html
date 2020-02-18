@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KpopFriends</title>
+    <style>
+    h1 {
+      font-size: 30px;
+      color:white;
+      padding:0;
+      height:60px;
+      font-family: Arial;
+      text-align:left;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      border-bottom: 1px solid gray;
+      padding: 0;
+      background-color: #00FFFF;
+      margin:0;
+      border: 10px;
+    }
+    footer{
+      border-top: 1px solid gray;
+      text-align: center;
+      padding: 20px;
+    }
+    .content{
+      display: flex;
+    }
+    .content main{
+      padding: 20px;
+    }
+    .content nav{
+      border-right: 1px solid gray;
+    }
+    .content aside{
+      border-left: 1px solid gray;
+    }
+    nav{
+      padding: 20px;
+      flex-basis:350px;
+      flex-shrink: 0;
+    }
+    main{
+      padding: 20px;
+      flex-basis:600px;
+    }
+    aside{
+      flex-basis:50px;
+      flex-shrink: 0;
+    }
+    .register{
+      text-align: right;
+      padding: 10px;
+      background-color: gray;
+      margin: 0;
+      border-bottom:1px black;
+    }
+    .button-link{
+      width: 100px;
+      height:40px;
+      color: black;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      text-decoration:none;
+      font-size: 32px;
+      border-right:10px solid gray;
+      border-radius: 4px;
+      padding: 1px;
+
+    }
+    .korea_button-link{
+      width: 100px;
+      height:40px;
+      color: black;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      text-decoration:none;
+      font-size: 25px;
+      border-right:10px solid gray;
+      border-radius: 4px;
+    }
+    .login{
+      cursor: pointer;
+    }
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="446021901528-k5kihuneslms7abfm5be0uelugh5vo71.apps.googleusercontent.com">
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <div class="container">
+      <header>
+        <h1>   KpopFriends</h1>
+        <div class="register">
+          <input class="login" type="button" value="SignIn" onclick="">
+          <input class="login" type="button" value="Signup" onclick="">
+        </div>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <a href="kpfr.html" class="button-link"><strong>Search<br> Kpop-penpals</strong></a><br><br>
+            <a href="kofr.html" class="button-link"><strong>Search<br> Korean-penpals</strong></a><br><br>
+            <a href="wofr.html" class="korea_button-link"><strong>외국인 펜팔친구<br>찾아보기(한국인용)</strong></a><br><br>
+            <a href="jofr.html" class="korea_button-link"><strong>Kpopペンパル友達<br>捜す（日本人）</strong></a>
+          </ul>
+        </nav>
+        <main>
+          Let's make Kpop friends and Korean penpals!<br>
+          Kpop과 함께 외국인 친구를 만들어 보세요!
+        </main>
+        <aside>
+          AD
+        </aside>
+      </section>
+      <footer>
+        home     │    support us      │    help      │    about
+      </footer>
+      <!-- jQuerry 사용법
+      <script>
+      $('.button-link').css('color','red')
+      </script>
+    -->
+    </div>
+</html>
